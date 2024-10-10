@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - John Doe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007acc;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007acc;
+            color: #fff;
+        }
+
+        td a {
+            color: #007acc;
+            text-decoration: none;
+        }
+
+        td a:hover {
+            text-decoration: underline;
+        }
+
+        /* Form styling */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        input[type="submit"] {
+            padding: 10px;
+            background-color: #007acc;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #005f99;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Contact Me</h1>
+        
+        <!-- Contact Information Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Contact Method</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Email</td>
+                    <td><a href="mailto:yukkixu19980213@gmail.com">yukkixu19980213@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td>LinkedIn</td>
+                    <td><a href="https://www.linkedin.com/in/liangyou-xu-6a877a271/" target="_blank">linkedin.com/in/liangyou-xu-6a877a271</a></td>
+                </tr>
+                <tr>
+                    <td>GitHub</td>
+                    <td><a href="https://github.khoury.northeastern.edu/yukki1998" target="_blank">github.khoury.northeastern.edu/yukki1998</a></td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>+1 (206) 581-8215</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <!-- Contact Form -->
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+            
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - John Doe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007acc;
+            margin-bottom: 40px;
+        }
+
+        /* Project Section */
+        .project {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .project h2 {
+            color: #007acc;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            font-size: 16px;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .project ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .project ul li {
+            margin-bottom: 8px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .project h2 {
+                font-size: 20px;
+            }
+
+            .project p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>My Projects</h1>
+
+        <!-- Distributed File Storage System Project -->
+        <div class="project">
+            <h2>Distributed File Storage System <span>(12/2023 – 02/2024)</span></h2>
+            <p>Developed a high-availability, strong-consistency distributed file storage system with impressive performance.</p>
+            <ul>
+                <li>Achieved 20,000 QPS with P99 latency of 800ms for 4KB key-value mixed read/write operations during stress testing.</li>
+                <li>Created a file client to wrap file content into key-value requests with zlib compression.</li>
+                <li>Implemented Raft consensus algorithm: Leader election, Log replication, Snapshot updates.</li>
+                <li>Used consistent hashing for shard partitioning and migration across Raft groups.</li>
+                <li>Supported various storage engines like RocksDB, B-tree, and Hash tables.</li>
+                <li>Optimized I/O models for better performance.</li>
+                <li>Improved read speeds with Asynchronous Apply, ReadIndex, and FollowerRead.</li>
+                <li>Prevented frequent master switches with Prevote mechanism.</li>
+            </ul>
+        </div>
+
+        <!-- GameHub Project -->
+        <div class="project">
+            <h2>GameHub <span>(05/2024 – 07/2024)</span></h2>
+            <p>Full-stack development of a high-performance gaming platform with robust backend and frontend technologies.</p>
+            <ul>
+                <li>Built a high-performance gaming web platform using SpringBoot, MyBatis, Redis, AWS RDS, Kafka, React, and Node.js.</li>
+                <li>Supported up to 10,000 concurrent users, handling 3,000 transactions per second with P99 latency below 1 second.</li>
+                <li>Implemented database sharding and table partitioning using Amazon RDS, improving performance for user data and transactions.</li>
+                <li>Reduced query latency from 200ms to 40ms by caching data with Amazon ElastiCache for Redis.</li>
+                <li>Optimized Kafka partitions, replica configuration, and asynchronous message processing, increasing throughput from 300 to 1,200 messages per second.</li>
+                <li>Implemented token-based authentication using Amazon Cognito for secure user information handling.</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

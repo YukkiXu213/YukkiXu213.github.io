@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Liangyou Xu - Personal Website</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            min-height: 100vh;
+            display:flex;
+            flex-direction: column;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-sizing: border-box;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 18px;
+        }
+
+        .navbar a:hover {
+            color: #ddd;
+        }
+
+        .first-initial {
+            color: orange;
+        }
+
+        .second-initial {
+            color: orange;
+        }
+
+        /* Hero section */
+        .hero {
+            padding: 100px 20px;
+            text-align: center;
+            background-color: #007acc;
+            color: #fff;
+            flex: 1;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .my-pic {
+            padding:50px;
+            width: 400px;
+            height: auto;
+        }
+
+        /* About section */
+        .about {
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 20px;
+            }
+
+            .about h2 {
+                font-size: 28px;
+            }
+
+            .about p {
+                font-size: 16px;
+            }
+
+            .navbar a {
+                font-size: 16px;
+            }
+
+            .my-pic {
+                width: 200px;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+            <!-- Navbar -->
+        <div class= "navbar">
+            <h1><span class = "first-initial">L</span>iangyou <span class = "second-initial">X</span>u</h1>
+            <nav>
+                <a href="./homepage.html">Home</a>
+                <a href="./project.html">Projects</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./resume.html">Resume</a>
+            </nav>
+        </div>
+
+        <!-- Hero Section -->
+        <section class= "hero">
+            <h1>Welcome to My Website</h1>
+            <p>CS graduate student | Future Software Engineer</p>
+            <p>Coding is not my hobby, it's just another way I perceive the world.</p>
+            <img src = "./src/PersonalPic.jpg" class = "my-pic"/>
+        </section>
+
+        <!-- About Section -->
+        <section class = "about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Liangyou Xu, also go by Yukki, a promising software engineer currently pursuing my graduate degree at Northeastern University. Love taking a good nap before working on a big project.</p>
+            <p>Originally from China, I am currently living in Seattle, WA and love to explore different cultures and make new connections. Developing new projects and going to the gym are the major two ways to reassure my self-worthness.</p>
+        </section>
+
+        <!-- Footer -->
+        <div class = "footer">
+            &copy; 2024 Liangyou Xu. All rights reserved.
+        </div>
+    </div>
+    
+
+</body>
+</html>
